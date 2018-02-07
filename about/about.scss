@@ -1,0 +1,12 @@
+.bannerabout{
+    &__wrapper{
+        width: 100%;
+    min-height: 450px;
+    display: flex;
+    flex-direction: row;
+          flex-wrap: nowrap;
+          justify-content: center;
+          align-content: stretch;
+          align-items: center;
+    }
+}

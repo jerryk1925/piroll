@@ -1,0 +1,19 @@
+.design{
+    &__wrapper{
+        
+        width: 100%;
+        min-height: 415px;
+         display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-content: stretch;
+        align-items: center;
+    }
+}
+.gallery{
+    &__wrapper{
+        min-height: 900px;
+        width: 100%;
+    }
+}

@@ -1,12 +1,24 @@
 .bannerabout{
     &__wrapper{
+        background: rgb(62, 62, 62);
         width: 100%;
-    min-height: 450px;
+    min-height: 350px;
     display: flex;
     flex-direction: row;
           flex-wrap: nowrap;
           justify-content: center;
           align-content: stretch;
           align-items: center;
+    }
+    &__caption{
+        font-size: 38px;
+        font-family: "Montserrat";
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+    }
+    &__text{
+        font-size: 18px;
+        font-family: 'Nunito', sans-serif;
+        color: rgb(255, 255, 255);
     }
 }

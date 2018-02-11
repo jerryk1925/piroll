@@ -153,6 +153,21 @@ body{
       align-content: stretch;
       align-items: center;
     }
+    &__caption{
+      font-size: 12px;
+      margin-top: 25px;
+     margin-bottom: 20px;
+      color: rgb(25, 25, 25);
+      font-weight: bold;
+    }
+    &__text{
+      font-size: 16px;
+      font-family: 'Nunito', sans-serif;
+        color: rgb(120, 120, 120);
+    }
+    &__two{
+      margin-top: 60px;
+    }
   }
   .carousel{
       &-indicators li{
@@ -169,7 +184,22 @@ body{
 
       }
       &-caption{
+        bottom: none;
+        top: 155px;
+        left: 155px;
           height: 150px;
+          &-pr{
+            font-size: 30px;
+            font-family: "Montserrat";
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+          }
+          &-name{
+            font-size: 12px;
+            font-family: "Montserrat";
+            color: rgb(255, 255, 255);
+          }
+         
         
       }
   }
@@ -178,7 +208,14 @@ body{
     &__wrapper{
       width: 100%;
       min-height: 200px;
+       display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          justify-content: center;
+          align-content: stretch;
+          align-items: center;
     }
+    
   }
   .project{
     &__wrapper{

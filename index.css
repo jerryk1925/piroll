@@ -256,6 +256,24 @@ body {
   align-items: center;
 }
 
+.profesions__caption {
+  font-size: 12px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  color: #191919;
+  font-weight: bold;
+}
+
+.profesions__text {
+  font-size: 16px;
+  font-family: 'Nunito', sans-serif;
+  color: #787878;
+}
+
+.profesions__two {
+  margin-top: 60px;
+}
+
 .carousel-indicators li {
   height: 6px;
   width: 6px;
@@ -272,12 +290,34 @@ body {
 }
 
 .carousel-caption {
+  bottom: none;
+  top: 155px;
+  left: 155px;
   height: 150px;
+}
+
+.carousel-caption-pr {
+  font-size: 30px;
+  font-family: "Montserrat";
+  color: white;
+  font-weight: bold;
+}
+
+.carousel-caption-name {
+  font-size: 12px;
+  font-family: "Montserrat";
+  color: white;
 }
 
 .clients__wrapper {
   width: 100%;
   min-height: 200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: center;
 }
 
 .project__wrapper {

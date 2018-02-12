@@ -19,6 +19,7 @@ body{
   }
   .banner{
       &__wrapper{
+        width: 100%;
     min-height: 670px;
     display: flex;
       flex-direction: row;
@@ -26,22 +27,22 @@ body{
       justify-content: center;
       align-content: stretch;
       align-items: center;
-    background: url("img/banner.jpg") no-repeat;
+    background: url("img/wall2.jpg") no-repeat;
     background-position: center;
     background-size: cover;
-    background: rgb(225, 235, 237);
+   
   }
   &__caption{
     font-size: 38px;
       font-family: "Montserrat";
-      color: rgb(29, 29, 29);
+     color: white;
       font-weight: bold;
   }
   &__text{
     margin: 40px 0;
     font-size: 18px;
     font-family: 'Nunito', sans-serif;
-      color: rgb(120, 120, 120);
+    color: white;
      
   }
 }

@@ -1,6 +1,8 @@
 .bannerabout{
     &__wrapper{
-        background: rgb(62, 62, 62);
+        background: url('../img/aboutbanner.jpg') no-repeat;
+        background-size: cover;
+        background-position: center;
         width: 100%;
     min-height: 350px;
     display: flex;
@@ -9,6 +11,7 @@
           justify-content: center;
           align-content: stretch;
           align-items: center;
+          
     }
     &__caption{
         font-size: 38px;
@@ -21,4 +24,29 @@
         font-family: 'Nunito', sans-serif;
         color: rgb(255, 255, 255);
     }
+}
+.aboutme{
+    &__wrapper{
+        min-height: 570px;
+        background: rgb(245, 245, 245);  
+    }
+}
+.noposition{
+    position: absolute;
+    left: -80px;
+}
+.projecttwo{
+    &__wrapper{
+        min-height: 400px;
+        display: flex;
+    flex-direction: row;
+          flex-wrap: nowrap;
+          justify-content: center;
+          align-content: stretch;
+          align-items: center;
+    }
+}
+.col-md-5{
+    padding: 110px 0;
+    
 }

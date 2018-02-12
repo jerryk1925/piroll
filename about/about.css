@@ -1,5 +1,7 @@
 .bannerabout__wrapper {
-  background: #3e3e3e;
+  background: url("../img/aboutbanner.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
   width: 100%;
   min-height: 350px;
   display: flex;
@@ -21,4 +23,28 @@
   font-size: 18px;
   font-family: 'Nunito', sans-serif;
   color: white;
+}
+
+.aboutme__wrapper {
+  min-height: 570px;
+  background: whitesmoke;
+}
+
+.noposition {
+  position: absolute;
+  left: -80px;
+}
+
+.projecttwo__wrapper {
+  min-height: 400px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: center;
+}
+
+.col-md-5 {
+  padding: 110px 0;
 }

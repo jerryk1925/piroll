@@ -84,6 +84,8 @@ body{
       justify-content: center;
       align-content: stretch;
       align-items: center;
+      position: relative;
+      background: rgb(249, 249, 249);
     }
     &__caption{
      
@@ -98,6 +100,11 @@ body{
         font-family: "Montserrat";
         color: rgb(0, 0, 0);
         font-weight: bold;
+    }
+    &__image{
+      position: absolute;
+      top: -140.5px;
+      left: -69px;
     }
   }
   .abc{
@@ -141,7 +148,50 @@ body{
     }
     
   }
-  
+  .works{
+    max-width: 1200px;
+    &__wrapper{
+      width: 100%;
+      min-height: 700px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: center;
+      align-content: stretch;
+      align-items: center;
+    }
+    &__more{
+      background: rgb(245, 245, 245);
+      height: 100px;
+      width: 1200px;
+      border: none;
+      font-size: 12px;
+      font-weight: bold;
+       color: rgb(142, 142, 142);
+       cursor: pointer;
+    }
+  }
+  .workprocess{
+    &__wrapper{
+
+    }
+    &__caption{
+      font-size: 30px;
+        font-family: "Montserrat";
+        color: rgb(25, 25, 25);
+        font-weight: bold;
+        margin: 40px 0;
+    }
+    &__text{
+      font-size: 16px;
+      font-family: 'Nunito', sans-serif;
+      color: rgb(120, 120, 120);
+      margin-bottom: 55px;
+    }
+    &__video{
+      margin-bottom: 40px;
+    }
+  }
   .profesions{
     &__wrapper{
       background: rgb(245, 245, 245);
@@ -297,7 +347,14 @@ body{
       
   }
 
-  
+  .image {
+    float: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+   
+    
+  }
   .button{
   width: 180px;
   height: 54px;
@@ -323,4 +380,10 @@ body{
   height: 44px;
       width: 40px;
      
+}
+.blueimp-gallery > .close,
+.blueimp-gallery > .prev,
+.blueimp-gallery > .next {
+  color: #fff !important ;
+
 }

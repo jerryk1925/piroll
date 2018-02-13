@@ -73,7 +73,7 @@
 }
 
 .bannerabout__wrapper {
-  background: url("../img/aboutbanner.jpg") no-repeat;
+  background: url("img/aboutbanner.jpg") no-repeat;
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -217,6 +217,8 @@ body {
   justify-content: center;
   align-content: stretch;
   align-items: center;
+  position: relative;
+  background: #f9f9f9;
 }
 
 .skill__caption {
@@ -232,6 +234,12 @@ body {
   font-family: "Montserrat";
   color: black;
   font-weight: bold;
+}
+
+.skill__image {
+  position: absolute;
+  top: -140.5px;
+  left: -69px;
 }
 
 .abc__wrapper {
@@ -274,6 +282,51 @@ body {
   font-size: 12px;
   font-family: "Montserrat";
   color: white;
+}
+
+.works {
+  max-width: 1200px;
+}
+
+.works__wrapper {
+  width: 100%;
+  min-height: 700px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: center;
+}
+
+.works__more {
+  background: whitesmoke;
+  height: 100px;
+  width: 1200px;
+  border: none;
+  font-size: 12px;
+  font-weight: bold;
+  color: #8e8e8e;
+  cursor: pointer;
+}
+
+.workprocess__caption {
+  font-size: 30px;
+  font-family: "Montserrat";
+  color: #191919;
+  font-weight: bold;
+  margin: 40px 0;
+}
+
+.workprocess__text {
+  font-size: 16px;
+  font-family: 'Nunito', sans-serif;
+  color: #787878;
+  margin-bottom: 55px;
+}
+
+.workprocess__video {
+  margin-bottom: 40px;
 }
 
 .profesions__wrapper {
@@ -433,6 +486,13 @@ body {
   color: #bcbcbc;
 }
 
+.image {
+  float: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 .button {
   width: 180px;
   height: 54px;
@@ -460,4 +520,10 @@ body {
   font-size: 44px;
   height: 44px;
   width: 40px;
+}
+
+.blueimp-gallery > .close,
+.blueimp-gallery > .prev,
+.blueimp-gallery > .next {
+  color: #fff !important;
 }

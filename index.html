@@ -498,12 +498,19 @@
 			display: none;
 		}
 	</style>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script type="text/javascript" src="https://unpkg.com/vue@2.4.3/dist/vue.js"></script>
+	<script type="text/javascript" src="https://unpkg.com/blueimp-gallery@2.27.0/js/blueimp-helper.js"></script>
+	<script type="text/javascript" src="https://unpkg.com/blueimp-gallery@2.27.0/js/blueimp-gallery.js"></script>
+	<script type="text/javascript" src="https://unpkg.com/blueimp-gallery@2.27.0/js/blueimp-gallery-fullscreen.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://unpkg.com/blueimp-gallery@2.27.0/css/blueimp-gallery.min.css">
+	<script type="text/javascript" src="node_modules/vue-gallery/dist/js/vue-gallery.js"></script>
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>PIROLL</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	
 	<link rel="stylesheet" type="text/css" href="index.css">
 </head>
 
@@ -578,7 +585,7 @@
 					<div  class="skill__item">MARKETING 65%</div>
 					<div><img src="img/line3.png" alt="" height="3" width="500"></div>
     			</div>
-    			<div class="col">123</div>
+    			<div class="col"><img src="img/skill.png" alt="" width="700" height="570" class="skill__image "></div>
     		</div>
     	</div>
     </div>
@@ -625,10 +632,25 @@
 		</div>
 	</div>
 	<div class="works__wrapper">
-
+		<div class="works" id="app">
+			<gallery :images="images" :index="index" @close="index = null"></gallery>
+			<div class="image" v-for="image, imageIndex in images" @click="index = imageIndex" :style="{ backgroundImage: 'url(' + image.href + ')', width: '300px', height: '300px' }"></div>
+		</div>
+		<div>
+			<button class="works__more">LOAD MORE WORK</button>
+		</div>
 	</div>
 	<div class="workprocess__wrapper">
-
+		<div class="container">
+			<div class="col-md-7 text-center">
+				<div class="workprocess__caption">Our Work Process</div>
+				<div class="workprocess__text">Was years it seasons was there form he in in them together over that, third sixth gathered female creeping bearing behold years.</div>
+				<div class="workprocess__video text-center">
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/fUyU3lKzoio" frameborder="0" allow="autoplay; encrypted-media"
+						 allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<div class="profesions__wrapper">
@@ -775,7 +797,54 @@
 
 
 
+	<script type="text/javascript">
+		new Vue({
+			el: '#app',
+			data: function () {
+				return {
+					images: [
+						{
+							
+							href: 'img/image.jpg',
+						},
+						{
+							
+							href: 'img/phone.jpg',
+						},
+						{
+							
+							href: 'img/shop.jpg',
+						},
+						{
+						
+							href: 'img/book.jpg',
+						},
+						{
+							
+							href: 'img/glass.jpg',
+						},
+						{
+						
+							href: 'img/book.jpg',
+						},
+						{
+						
+							href: 'img/nohey.jpg',
+						},
+						{
+							
+							href: 'img/she.jpg',
+						}
+					],
+					index: null
+				};
+			},
 
+			components: {
+				'gallery': VueGallery
+			}
+		});
+	</script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
   </script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

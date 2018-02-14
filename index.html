@@ -525,7 +525,7 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav">
-                        <li class="nav-item active">
+                        <li class="nav-item ">
                             <a class="nav-link" href="home/index.html">HOME</a>
                         </li>
                         <li class="nav-item">
@@ -553,7 +553,7 @@
     </div>
     <div class="banner__wrapper">
         <div class="banner container align-item-end">
-        	<div class="row justify-content-end" >
+        	<div class="row justify-content-end justify-content-center" >
             	<div class=" col-6 " >
                     <div class="banner__caption">WE Design and Develop</div>
                     <div class="banner__text">We are new design studio based in USA. We gabe over<br> 20 years of combined experience, abd know a thing or two<br> about designing websites and mobile apps</div>
@@ -563,7 +563,8 @@
                 </div>
             </div>
         </div>
-    </div>
+	</div>
+
     <div class="about__wrapper">
     	<div class="container">
     		<div class="col-md-7 text-center">
@@ -572,7 +573,8 @@
     			<div><img src="img/signature.png" alt="" width="223" height="57"></div>
     		</div>
     	</div>
-    </div>
+	</div>
+	
     <div class="skill__wrapper">
     	<div class="container">
     		<div class="row">
@@ -636,7 +638,7 @@
 			<gallery :images="images" :index="index" @close="index = null"></gallery>
 			<div class="image" v-for="image, imageIndex in images" @click="index = imageIndex" :style="{ backgroundImage: 'url(' + image.href + ')', width: '300px', height: '300px' }"></div>
 		</div>
-		<div>
+		<div class="row">
 			<button class="works__more">LOAD MORE WORK</button>
 		</div>
 	</div>
@@ -701,31 +703,36 @@
 			</div>
 		</div>
 	</div>
-	<div class="slider">
-		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-			<ol class="carousel-indicators">
-				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-				<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-			</ol>
-			<div class="carousel-inner">
-				<div class="carousel-item active">
-					<div class="carousel-caption d-none d-md-block col-md-9">
-						<div class="carousel-caption-pr">" Outstanding job and exceeded all expectations. It was a pleasure to work with them on a sizavle first project and am looking forward to start the next one asap."</div>
-						<div class="carousel-caption-name">MICHAEL HOPKINS</div>
-					  </div>
-				</div>
-				<div class="carousel-item">
-					<div class="carousel-caption d-none d-md-block col-md-9">
-						<div class="carousel-caption-pr">" Outstanding job and exceeded all expectations. It was a pleasure to work with them on a sizavle first project and am looking forward to start the next one asap."</div>
-						<div class="carousel-caption-name">MICHAEL HOPKINS</div>
-					  </div>
-				</div>
-				<div class="carousel-item">
-					<div class="carousel-caption d-none d-md-block col-md-9">
-						<div class="carousel-caption-pr">" Outstanding job and exceeded all expectations. It was a pleasure to work with them on a sizavle first project and am looking forward to start the next one asap."</div>
-						<div class="carousel-caption-name">MICHAEL HOPKINS</div>
-					  </div>
+	<div class="testimonials__wrapper">
+		<div class="slider">
+			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+					<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<div class="carousel-caption d-none d-md-block col-md-9">
+							<div class="carousel-caption-pr">" Outstanding job and exceeded all expectations. It was a pleasure to work with them on a sizavle first project and
+								am looking forward to start the next one asap."</div>
+							<div class="carousel-caption-name">MICHAEL HOPKINS</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="carousel-caption d-none d-md-block col-md-9">
+							<div class="carousel-caption-pr">" Outstanding job and exceeded all expectations. It was a pleasure to work with them on a sizavle first project and
+								am looking forward to start the next one asap."</div>
+							<div class="carousel-caption-name">MICHAEL HOPKINS</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="carousel-caption d-none d-md-block col-md-9">
+							<div class="carousel-caption-pr">" Outstanding job and exceeded all expectations. It was a pleasure to work with them on a sizavle first project and
+								am looking forward to start the next one asap."</div>
+							<div class="carousel-caption-name">MICHAEL HOPKINS</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

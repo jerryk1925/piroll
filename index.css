@@ -157,6 +157,18 @@ body {
   min-height: 102px;
 }
 
+.nav-link {
+  font-size: 12px;
+  font-family: "Montserrat";
+  font-weight: bold;
+  opacity: 1;
+  color: black !important;
+}
+
+.nav-link:hover {
+  color: #10c9c3 !important;
+}
+
 .banner__wrapper {
   width: 100%;
   min-height: 670px;
@@ -183,6 +195,14 @@ body {
   font-size: 18px;
   font-family: 'Nunito', sans-serif;
   color: white;
+}
+
+.banner .justify-content-end {
+  display: none;
+}
+
+.banner .justify-content-center {
+  display: block;
 }
 
 .about__wrapper {
@@ -359,6 +379,18 @@ body {
   margin-top: 60px;
 }
 
+.testimonials__wrapper {
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: center;
+  width: 100%;
+  background: #10c9c3;
+}
+
 .carousel-indicators li {
   height: 6px;
   width: 6px;
@@ -366,11 +398,13 @@ body {
 }
 
 .carousel-inner {
+  width: 1200px;
   height: 500px;
   background: #10c9c3;
 }
 
 .carousel-item {
+  width: 1200px;
   height: 500px;
 }
 

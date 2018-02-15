@@ -497,6 +497,12 @@ body {
   align-items: center;
 }
 
+@media only screen and (max-width: 480px) {
+  .profesions__wrapper {
+    padding: 10px 0;
+  }
+}
+
 .profesions__caption {
   font-size: 12px;
   margin-top: 25px;
@@ -530,14 +536,31 @@ body {
   }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 485px) {
   .profesions__text {
     font-size: 18px;
   }
 }
 
+@media only screen and (max-width: 360px) {
+  .profesions__text {
+    font-size: 16px;
+  }
+}
+
 .profesions__two {
   margin-top: 60px;
+}
+
+.profesions__xxx {
+  width: 100%;
+  display: none;
+}
+
+@media only screen and (max-width: 485px) {
+  .profesions__xxx {
+    display: block;
+  }
 }
 
 .testimonials__wrapper {

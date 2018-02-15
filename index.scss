@@ -306,6 +306,7 @@ body{
   }
   .profesions{
     &__wrapper{
+     
       background: rgb(245, 245, 245);
       min-height: 535px;
       width: 100%;
@@ -315,6 +316,9 @@ body{
       justify-content: center;
       align-content: stretch;
       align-items: center;
+      @media only screen and (max-width: 480px) {
+        padding: 10px 0;
+      }
     }
     &__caption{
       font-size: 12px;
@@ -330,6 +334,7 @@ body{
       @media only screen and (max-width: 480px) {
         font-size: 14px;
       }
+      
     }
     &__text{
       font-size: 16px;
@@ -338,13 +343,24 @@ body{
         @media only screen and (max-width: 600px) {
           font-size: 14px;
         } 
-        @media only screen and (max-width: 480px) {
+        @media only screen and (max-width: 485px) {
           font-size: 18px;
+        }
+        @media only screen and (max-width: 360px) {
+          font-size: 16px;
         }
     }
     &__two{
       margin-top: 60px;
     }
+    &__xxx{
+      width: 100%;
+      display: none;
+      @media only screen and (max-width: 485px) {
+        display: block;
+      }
+    }
+    
   }
   .testimonials{
     &__wrapper{

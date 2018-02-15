@@ -550,13 +550,23 @@
                 </div>
             </nav>
         </div>
-    </div>
+	</div>
+		
     <div class="banner__wrapper">
         <div class="banner container align-item-end">
-        	<div class="row justify-content-end justify-content-center" >
-            	<div class=" col-6 " >
+        	<div class="row justify-content-end " >
+            	<div class="col-6 " >
                     <div class="banner__caption">WE Design and Develop</div>
-                    <div class="banner__text">We are new design studio based in USA. We gabe over<br> 20 years of combined experience, abd know a thing or two<br> about designing websites and mobile apps</div>
+                    <div class="banner__text">We are new design studio based in USA. We gabe over 20 years of combined experience, abd know a thing or two about designing websites and mobile apps</div>
+                    <div > 
+                        <button class="button" >CONTACT US</button>
+                    </div>
+                </div>
+			</div>
+			<div class="row justify-content-center " >
+            	<div class="col-8 " >
+                    <div class="banner__caption">WE Design and Develop</div>
+                    <div class="banner__text">We are new design studio based in USA. We gabe over 20 years of combined experience, abd know a thing or two about designing websites and mobile apps</div>
                     <div > 
                         <button class="button" >CONTACT US</button>
                     </div>
@@ -564,33 +574,31 @@
             </div>
         </div>
 	</div>
-
     <div class="about__wrapper">
     	<div class="container">
     		<div class="col-md-7 text-center">
     			<div class="about__caption">About Us</div>
-    			<div class="about__text">Divide have don't main wherein air fourth. Own itself make have night won't make.<br> A you under Seed appear which good give. Own give air without fowl moveth dry first heaven fruit, dominion she'd won't very all.</div>
+    			<div class="about__text">Divide have don't main wherein air fourth. Own itself make have night won't make. A you under Seed appear which good give. Own give air without fowl moveth dry first heaven fruit, dominion she'd won't very all.</div>
     			<div><img src="img/signature.png" alt="" width="223" height="57"></div>
     		</div>
     	</div>
 	</div>
-	
     <div class="skill__wrapper">
     	<div class="container">
     		<div class="row">
-    			<div class="col">
+    			<div class="col align-self-center">
 					<div class="skill__caption">Professional Skills</div>
 					<div class="skill__item">UI/UX DESIGN 75%</div>
-					<div><img src="img/line1.png" alt="" height="3" width="500"></div>
+					<div><img src="img/line1.png" alt="" height="3" width="500" class="skill__line"></div>
 					<div  class="skill__item">WEB DEVELOPMENT 90%</div>
-					<div><img src="img/line2.png" alt="" height="3" width="500"></div>
+					<div><img src="img/line2.png" alt="" height="3" width="500" class="skill__line"></div>
 					<div  class="skill__item">MARKETING 65%</div>
-					<div><img src="img/line3.png" alt="" height="3" width="500"></div>
+					<div><img src="img/line3.png" alt="" height="3" width="500" class="skill__line"></div>
     			</div>
-    			<div class="col"><img src="img/skill.png" alt="" width="700" height="570" class="skill__image "></div>
+    			<div class="col skill__image "></div>
     		</div>
     	</div>
-    </div>
+	</div>
 	<div class="abc__wrapper">
 		<div class="container">
 			<div class="row">
@@ -633,28 +641,36 @@
 			</div>
 		</div>
 	</div>
+
 	<div class="works__wrapper">
 		<div class="works" id="app">
 			<gallery :images="images" :index="index" @close="index = null"></gallery>
 			<div class="image" v-for="image, imageIndex in images" @click="index = imageIndex" :style="{ backgroundImage: 'url(' + image.href + ')', width: '300px', height: '300px' }"></div>
 		</div>
-		<div class="row">
-			<button class="works__more">LOAD MORE WORK</button>
+	</div>
+
+	<div class="more__wrapper">
+		<div class="container">
+			<div class="col">
+			<button class="more__btn">LOAD MORE WORK</button>
+			</div>
 		</div>
 	</div>
+
+
 	<div class="workprocess__wrapper">
 		<div class="container">
 			<div class="col-md-7 text-center">
 				<div class="workprocess__caption">Our Work Process</div>
 				<div class="workprocess__text">Was years it seasons was there form he in in them together over that, third sixth gathered female creeping bearing behold years.</div>
 				<div class="workprocess__video text-center">
-						<iframe width="560" height="315" src="https://www.youtube.com/embed/fUyU3lKzoio" frameborder="0" allow="autoplay; encrypted-media"
+						<iframe width="560" height="315" class="workprocess__video_robot text-center" src="https://www.youtube.com/embed/fUyU3lKzoio" frameborder="0" allow="autoplay; encrypted-media"
 						 allowfullscreen></iframe>
 				</div>
 			</div>
 		</div>
 	</div>
-
+	
 	<div class="profesions__wrapper">
 		<div class="container">
 			<div class="row text-center">
@@ -703,6 +719,7 @@
 			</div>
 		</div>
 	</div>
+		
 	<div class="testimonials__wrapper">
 		<div class="slider">
 			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -713,21 +730,21 @@
 				</ol>
 				<div class="carousel-inner">
 					<div class="carousel-item active">
-						<div class="carousel-caption d-none d-md-block col-md-9">
+						<div class="carousel-caption  d-md-block ">
 							<div class="carousel-caption-pr">" Outstanding job and exceeded all expectations. It was a pleasure to work with them on a sizavle first project and
 								am looking forward to start the next one asap."</div>
 							<div class="carousel-caption-name">MICHAEL HOPKINS</div>
 						</div>
 					</div>
 					<div class="carousel-item">
-						<div class="carousel-caption d-none d-md-block col-md-9">
+						<div class="carousel-caption  d-md-block">
 							<div class="carousel-caption-pr">" Outstanding job and exceeded all expectations. It was a pleasure to work with them on a sizavle first project and
 								am looking forward to start the next one asap."</div>
 							<div class="carousel-caption-name">MICHAEL HOPKINS</div>
 						</div>
 					</div>
 					<div class="carousel-item">
-						<div class="carousel-caption d-none d-md-block col-md-9">
+						<div class="carousel-caption  d-md-block ">
 							<div class="carousel-caption-pr">" Outstanding job and exceeded all expectations. It was a pleasure to work with them on a sizavle first project and
 								am looking forward to start the next one asap."</div>
 							<div class="carousel-caption-name">MICHAEL HOPKINS</div>
@@ -737,8 +754,9 @@
 			</div>
 		</div>
 	</div>
+
 	<div class="clients__wrapper">
-		<div class="container">
+		<div class="clients container">
 			<div class="clients__icon row text-center">
 				<div class="col"><img src="img/hadmade.png" alt="" width="89" height="65"></div>
 				<div class="col"><img src="img/mount.png" alt="" width="96" height="72"></div>
@@ -748,9 +766,10 @@
 			</div>
 		</div>
 	</div>
+
 	<div class="project__wrapper">
 		<div class="container">
-			<div class="col-md-8 text-center ">
+			<div class="col-md-8 text-center">
 				<div class="project__caption text-center" >Need a Project?</div>
 				<div class="project__text text-center">Let us know what you're looking for in an agency. We'll take a look and see <br> if this could be the start of something beautiful</div>
 				<form action="">
@@ -758,29 +777,32 @@
 					<input type="email" name="" id="" placeholder="Your Email" class="project__email">
 					<input type="text" name="" id="" placeholder="Your Title" class="project__title">
 					<textarea name=""  placeholder="Your Comment" class="project__comment"></textarea>
-					<button type="submit"  class="button">SEND MESSAGE</button>
+					<button type="submit"  class="button ">SEND MESSAGE</button>
 				</form>
 			</div>
 		</div>
 	</div>
+	
 	<div class="footer__wrapper">
 		<div class="container">
 			<div class="row">
-				<div class="col-5"> 
+				<div class="col-4"> 
 					<div class="footer__caption">Piroll Design, Inc.</div>
 					<div class="footer__text">&#169; 2017 Piroll. All rights reserved.<br> Designed by robirurk</div>
 				</div>
-				<div class="col-3">
+				<div class="col-3 ">
 					<div class="footer__text">hello@pirolltheme.com</div>
 					<div class="footer__text">++44 987 065 908</div>
 				</div>
+				<div class="w-100"></div>
 				<div class="col-1"> 
 					<div class="footer__text">Projects</div>
 					<div class="footer__text">About</div>
 					<div class="footer__text">Services</div>
 					<div class="footer__text">Carreer</div>
 				</div>
-				<div class="col-2"> 
+				
+				<div class="col-2 "> 
 					<div class="footer__text">News</div>
 					<div class="footer__text">Events</div>
 					<div class="footer__text">Contact</div>

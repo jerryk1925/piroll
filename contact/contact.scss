@@ -36,6 +36,9 @@
     }
     &__email{
         margin-left: 25px;
+        @media only screen and (max-width: 1000px) {
+          margin-left: 0px;
+        }
        
       }
       &__name,
@@ -44,6 +47,18 @@
         width: 320px;
         height: 50px;
         padding-left: 20px;
+        @media only screen and (max-width: 1000px) {
+          width:210px;
+        }
+        @media only screen and (max-width: 766px) {
+          margin-top: 10px;
+        }
+        @media only screen and (max-width: 460px) {
+          width:360px;
+        }
+        @media only screen and (max-width: 400px) {
+          width:270px;
+        }
       }
       &__title{
         padding-left: 20px;
@@ -51,6 +66,15 @@
         width: 670px;
         height: 50px;
         margin: 30px 0;
+        @media only screen and (max-width: 1000px) {
+          width:425px;
+        }
+        @media only screen and (max-width: 460px) {
+          width:360px;
+        }
+        @media only screen and (max-width: 400px) {
+          width:270px;
+        }
       }
       &__comment{
         padding-left: 20px;
@@ -60,12 +84,21 @@
         width: 670px;
         border: none;
         margin-bottom: 30px;
+        @media only screen and (max-width: 1000px) {
+          width:425px;
+        }
+        @media only screen and (max-width: 460px) {
+          width:360px;
+        }
+        @media only screen and (max-width: 400px) {
+          width:270px;
+        }
       }
 }
 .map{
 
   &__wrapper{
-      margin: 0 auto;
+      margin: 30px auto 0 auto;
       height: 470px;
   width: 100%;
   

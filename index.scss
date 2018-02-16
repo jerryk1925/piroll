@@ -1,6 +1,8 @@
 @import "contact/contact.scss";
 @import "about/about.scss";
 @import "home/home.scss";
+@import "projects/project.css";
+
 body{
   font-family: 'Montserrat', sans-serif;
 }
@@ -254,7 +256,7 @@ body{
   }
   .workprocess{
     &__wrapper{
-
+      width: 100%;
     }
     &__caption{
       font-size: 30px;

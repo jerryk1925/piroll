@@ -1,8 +1,9 @@
 .design{
+    
     &__wrapper{
         
         width: 100%;
-        min-height: 415px;
+        min-height: 310px;
          display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
@@ -10,10 +11,36 @@
         align-content: stretch;
         align-items: center;
     }
+    &__caption{
+        font-size: 30px;
+        
+        color: rgb(25, 25, 25);
+        font-weight: bold;
+      }
+      &__text{
+        font-size: 18px;
+        font-family: 'Nunito', sans-serif;
+          color: rgb(120, 120, 120);
+          margin: 40px 0;
+      }
 }
 .gallery{
+    max-width: 1200px;
+    display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-content: stretch;
+      align-items: center;
+      min-height: 900px;
     &__wrapper{
-        min-height: 900px;
         width: 100%;
+      min-height: 900px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      justify-content: flex-start;
+      align-content: stretch;
+      align-items: center;
     }
 }

@@ -1,6 +1,6 @@
 .design__wrapper {
   width: 100%;
-  min-height: 415px;
+  min-height: 310px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -9,7 +9,37 @@
   align-items: center;
 }
 
-.gallery__wrapper {
+.design__caption {
+  font-size: 30px;
+  color: #191919;
+  font-weight: bold;
+}
+
+.design__text {
+  font-size: 18px;
+  font-family: 'Nunito', sans-serif;
+  color: #787878;
+  margin: 40px 0;
+}
+
+.gallery {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: center;
   min-height: 900px;
+}
+
+.gallery__wrapper {
   width: 100%;
+  min-height: 900px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: center;
 }

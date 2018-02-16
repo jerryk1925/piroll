@@ -30,9 +30,54 @@
   background: whitesmoke;
 }
 
-.noposition {
+.aboutme__noposition {
   position: absolute;
   left: -80px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .aboutme__noposition {
+    width: 600px;
+  }
+}
+
+@media only screen and (max-width: 995px) {
+  .aboutme__noposition {
+    width: 480px;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .aboutme__noposition {
+    position: static;
+    background-size: cover;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 465px) {
+  .aboutme__noposition {
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .aboutme__noposition {
+    width: 360px !important;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 320px) {
+  .aboutme__noposition {
+    width: 320px !important;
+    height: 380px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .aboutme__minuspadding {
+    padding: 0;
+  }
 }
 
 .projecttwo__wrapper {
@@ -47,4 +92,16 @@
 
 .col-md-5 {
   padding: 110px 0;
+}
+
+@media only screen and (max-width: 995px) {
+  .col-md-5 {
+    padding: 70px 0;
+  }
+}
+
+@media only screen and (max-width: 465px) {
+  .col-md-5 {
+    padding: 70px 15px;
+  }
 }

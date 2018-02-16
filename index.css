@@ -1,3 +1,4 @@
+@import url(c:\projects\piroll\projects\project.css);
 .info__wrapper {
   background: whitesmoke;
   width: 100%;
@@ -41,11 +42,41 @@
   margin-left: 25px;
 }
 
+@media only screen and (max-width: 1000px) {
+  .info__email {
+    margin-left: 0px;
+  }
+}
+
 .info__name, .info__email {
   border: none;
   width: 320px;
   height: 50px;
   padding-left: 20px;
+}
+
+@media only screen and (max-width: 1000px) {
+  .info__name, .info__email {
+    width: 210px;
+  }
+}
+
+@media only screen and (max-width: 766px) {
+  .info__name, .info__email {
+    margin-top: 10px;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .info__name, .info__email {
+    width: 360px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .info__name, .info__email {
+    width: 270px;
+  }
 }
 
 .info__title {
@@ -54,6 +85,24 @@
   width: 670px;
   height: 50px;
   margin: 30px 0;
+}
+
+@media only screen and (max-width: 1000px) {
+  .info__title {
+    width: 425px;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .info__title {
+    width: 360px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .info__title {
+    width: 270px;
+  }
 }
 
 .info__comment {
@@ -66,8 +115,26 @@
   margin-bottom: 30px;
 }
 
+@media only screen and (max-width: 1000px) {
+  .info__comment {
+    width: 425px;
+  }
+}
+
+@media only screen and (max-width: 460px) {
+  .info__comment {
+    width: 360px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .info__comment {
+    width: 270px;
+  }
+}
+
 .map__wrapper {
-  margin: 0 auto;
+  margin: 30px auto 0 auto;
   height: 470px;
   width: 100%;
 }
@@ -104,9 +171,54 @@
   background: whitesmoke;
 }
 
-.noposition {
+.aboutme__noposition {
   position: absolute;
   left: -80px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .aboutme__noposition {
+    width: 600px;
+  }
+}
+
+@media only screen and (max-width: 995px) {
+  .aboutme__noposition {
+    width: 480px;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .aboutme__noposition {
+    position: static;
+    background-size: cover;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 465px) {
+  .aboutme__noposition {
+    height: 400px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .aboutme__noposition {
+    width: 360px !important;
+  }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 320px) {
+  .aboutme__noposition {
+    width: 320px !important;
+    height: 380px;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .aboutme__minuspadding {
+    padding: 0;
+  }
 }
 
 .projecttwo__wrapper {
@@ -123,9 +235,21 @@
   padding: 110px 0;
 }
 
+@media only screen and (max-width: 995px) {
+  .col-md-5 {
+    padding: 70px 0;
+  }
+}
+
+@media only screen and (max-width: 465px) {
+  .col-md-5 {
+    padding: 70px 15px;
+  }
+}
+
 .design__wrapper {
   width: 100%;
-  min-height: 415px;
+  min-height: 310px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
@@ -134,9 +258,39 @@
   align-items: center;
 }
 
-.gallery__wrapper {
+.design__caption {
+  font-size: 30px;
+  color: #191919;
+  font-weight: bold;
+}
+
+.design__text {
+  font-size: 18px;
+  font-family: 'Nunito', sans-serif;
+  color: #787878;
+  margin: 40px 0;
+}
+
+.gallery {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: stretch;
+  align-items: center;
   min-height: 900px;
+}
+
+.gallery__wrapper {
   width: 100%;
+  min-height: 900px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-content: stretch;
+  align-items: center;
 }
 
 body {
@@ -413,6 +567,10 @@ body {
   font-weight: bold;
   color: #8e8e8e;
   cursor: pointer;
+}
+
+.workprocess__wrapper {
+  width: 100%;
 }
 
 .workprocess__caption {

@@ -1,0 +1,79 @@
+.main{
+    &__wrapper{
+        min-height: 670px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-content: stretch;
+        align-items: flex-start;
+        background: rgb(246, 246, 246);
+    }
+    &-inner{
+        width: inherit;
+        background: red;
+        background: rgb(246, 246, 246);
+    }
+    &-item{
+        width: inherit;
+        background: red;
+        background: rgb(246, 246, 246);
+    }
+    
+    &__center{
+        margin: auto 0;
+    }
+    &__caption{
+        font-size: 38px;
+        font-family: "Montserrat";
+        color: rgb(23, 23, 23);
+        font-weight: bold;
+        &_img{
+          background-size: cover;  
+        }
+    }
+    &__text{
+        margin: 17px 0;
+        font-size: 16px;
+        font-family: 'Nunito', sans-serif;
+        color: rgb(120, 120, 120);
+    }
+    &__name{
+        font-size: 16px;
+        font-family: 'Nunito', sans-serif;
+        color: rgb(120, 120, 120);
+        span{
+            color: rgb(23, 23, 23);
+            font-weight: bold;
+        }
+    }
+
+}
+.carousel-control-prev-icon{
+    background: url('../img/arrow.png') no-repeat;
+    width: 18px;
+    height: 18px;
+}
+.carousel-control-next-icon{
+    background: url('../img/arrowright.png') no-repeat;
+    width: 18px;
+    height: 18px;
+}
+.carousel-control-next,
+.carousel-control-prev{
+    top: 0;
+    bottom: -670px;
+    width: 13%;
+}
+.carousel-control-next-about,
+.carousel-control-prev-about{
+    font-size: 12px;
+    font-family: "Montserrat";
+    color: rgb(29, 29, 29);
+    font-weight: bold;
+    text-align: right;
+}
+.col-5{
+    margin: 100px 0;
+}
